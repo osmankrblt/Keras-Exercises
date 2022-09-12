@@ -1,1 +1,7 @@
-# Keras-Exercises
+##Keras Exercises
+
+
+
+## Requirement
+keras                     2.7.0
+tensorflow                2.7.0     
