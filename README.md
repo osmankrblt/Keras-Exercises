@@ -1,5 +1,4 @@
-##Keras Exercises
-
+## Keras Exercises
 
 
 ## Requirement
