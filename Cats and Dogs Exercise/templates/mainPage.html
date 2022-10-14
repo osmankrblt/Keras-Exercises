@@ -51,7 +51,8 @@
   </head>
 
   <body>
- 
+ <img src="{{ selectedImage }}" alt="User Image">
+          
     <div class="container">
       <div class="row rows">
         {% if result %}
@@ -69,7 +70,7 @@
       </div>
 
       <div class="rows">
-      <form method=post enctype=multipart/form-data action="/upload">
+      <form method=post enctype=multipart/form-data action="/">
       <input type=file name=file>
       <button type="submit" class="button">Run</button>
     </form>

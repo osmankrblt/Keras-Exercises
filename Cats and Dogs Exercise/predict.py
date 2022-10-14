@@ -12,7 +12,6 @@ def  predictImage(image,model):
     index = np.argmax(result)
     
   
-    print("Result"+str(result))
     if result[index]<0.6:
         return "None Type"
 
