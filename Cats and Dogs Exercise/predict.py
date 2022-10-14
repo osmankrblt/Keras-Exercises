@@ -7,8 +7,13 @@ def  predictImage(image,model):
     image = preprocess_input(image)
     image = np.expand_dims(image, axis=0)
    
-    result = model.predict(np.array(image))
-   
-    result = np.argmax(result)
+    result = np.squeeze(model.predict(np.array(image)))
 
-    return   "Cat" if result == 0 else "Dog"
+    index = np.argmax(result)
+    
+  
+    print("Result"+str(result))
+    if result[index]<0.6:
+        return "None Type"
+
+    return   "Cat" if index == 0 else "Dog"

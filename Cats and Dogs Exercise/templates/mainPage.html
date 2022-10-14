@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+
 <html>
   <head>
     <title>Cat or Dog</title>
@@ -49,6 +51,7 @@
   </head>
 
   <body>
+ 
     <div class="container">
       <div class="row rows">
         {% if result %}
@@ -61,25 +64,16 @@
         {% endif %}
 
         <div class="div a image row">
-          <img
-            class="image"
-            id="selectedImage"
-            src="D:/Python Project/Keras Exercises/Cats and Dogs Exercise/data/dog_12480.jpg"
-            alt="Selected Image"
-          />
+          <img src="{{ selectedImage }}" alt="User Image">
         </div>
       </div>
 
       <div class="rows">
-        <form
-          method="post"
-          id="images"
-          action="/predict"
-          enctype="multipart/form-data"
-        >
-          <input type="file" name="image" id="image" />
-          <button type="submit" class="button">Run</button>
-        </form>
+      <form method=post enctype=multipart/form-data action="/upload">
+      <input type=file name=file>
+      <button type="submit" class="button">Run</button>
+    </form>
+        
 
         <!-- Jquery Cdn -->
         <script
