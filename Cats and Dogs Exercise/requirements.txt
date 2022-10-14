@@ -1,0 +1,8 @@
+keras
+sklearn
+numpy 
+itertools
+tensorflow
+matplotlib
+os
+gunicorn
